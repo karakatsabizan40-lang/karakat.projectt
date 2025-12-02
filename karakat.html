@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бағжан & Қарақат: Жұптық Жұмысқа Шақыру</title>
+    <style>
+        /* ==================== ФОН (Анимация) ==================== */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            
+            /* Қозғалатын Градиент */
+            background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+            background-size: 400% 400%;
+            animation: GradientBackground 15s ease infinite;
+        }
+
+        @keyframes GradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ==================== ШАҚЫРУ КАРТАСЫ ==================== */
+        .invitation-card {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            max-width: 550px;
+            backdrop-filter: blur(8px);
+            border: 2px solid #FFD700;
+        }
+
+        /* ==================== ФОТО СТИЛІ ==================== */
+        .photos-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+
+        .photo-frame {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-frame:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-frame p {
+            color: #FFD700;
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        /* ==================== МӘТІН СТИЛІ ==================== */
+        h1 {
+            color: #FFD700;
+            font-size: 2.4em;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+        }
+
+        h2 {
+            color: #f0f0f0;
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #FFA07A; 
+            font-weight: bold;
+            font-size: 1.3em;
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .meet-link a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background-color: #4285F4;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            border: 1px solid #fff;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .meet-link a:hover {
+            background-color: #357ae8;
+            transform: scale(1.08);
+        }
+
+        /* ==================== МУЗЫКА БАСҚАРУЫ ==================== */
+        .music-control {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        
+        #bgMusic {
+            display: none; /* Аудио ойнатқышты жасыру */
+        }
+        
+        #playPauseButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        #playPauseButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <h1>💫 Құрметті Арай Апай! 💫</h1>
+        
+        
+        <div class="photos-container">
+            <div class="photo-frame">
+                <img src="baga.png.jpg" alt="">
+                <p>Бағжан</p>
+            </div>
+            
+            <div class="photo-frame">
+                <img src="karakatt.png.jpg" alt="Қарақаттың фотосы">
+                <p>Қарақат</p>
+            </div>
+        </div>
+
+        <div class="details">
+            <p style="font-size: 1.2em;">Сізді Жұптық-жұмысқа шақырамыз</p>
+            
+            <p>
+                *Күні:* <span class="highlight">03.12.2025</span>
+            </p>
+            <p>
+                *Уақыты:* <span class="highlight">Сағат 22:00</span>
+            </p>
+            <p>
+                *Өтетін орны:* <span class="highlight">Google Meet</span>
+            </p>
+            <p>
+                <h1>Тихими шагами,уверенно к мечте ☝🏻</h1>
+
+            </p>
+        </div>
+<div>
+    <img src = "bagaaa.png.jpg" width="350"><br>
+    <img src = "k.png.jpg" width="350">
+    
+
+</div>
+</body>
+</html>
